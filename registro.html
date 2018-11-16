@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="image/logo.png"/>
+        <title>Registrarse</title>
+        <link rel="stylesheet" href="style/style.css">
+    </head>
+    <body>
+        <form action="url" method="GET">
+            <header>
+                <div class="logo">
+                    <h1><img src="image/logo.gif" width="30"><a href="main.html">GamePro</a><img src="image/logo.gif" width="30"></h1>
+                </div>
+                <div class="us">
+                    <div>
+                        <label for="usua"></label>
+                        <input type="text" id="usua" name="Usuario" placeholder="Usruario" required>
+                    </div>
+                    <div>
+                        <label for="password"></label>
+                        <input type="password" id="pas" name="pas" placeholder="Contraseña" required>
+                    </div>
+                    <div>
+                        <input type="submit" value="Iniciar" class="iniciar">
+                    </div>   
+                </div>
+            </header>
+        </form>
+        <nav>
+            <ul class="navegador">
+                <li><a href="main.html">Inicio</a></li>
+                <li><a href="games.html">Juegos</a>
+                    <ul>
+                        <li>Shooter
+                            <ul class="sub-menu">
+                                <li><a href="info_game.html">PUBG</a></li>
+                                <li>Battlefield 1</li> 
+                                <li>Call of Duty 4 Modern Warfare</li>  
+                            </ul>
+                        </li>
+                        <li>Carrera
+                            <ul class="sub-menu">
+                                <li>Need for Speed Carbono</li>
+                                <li>Motogp 2018</li>
+                            </ul>
+                        </li>                   
+                        <li>Aventura
+                            <ul class="sub-menu">  
+                                <li>Batman: The Enemy Within</li>
+                                 <li>God of War: Ascension</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>Noticias</li>
+                <li>¿Quienes somos?</li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <form action="url" method="GET" class="form">
+            <p>Unete gratis para una mejor experiencia</p>
+            <div>
+                <label for="nombre"></label>
+                <input type="text" id="nombre" name="nombre"required maxlength="30" placeholder="Nombre">
+            </div>
+            <div>
+                <label for="apellido"></label>
+                <input type="text" id="apellido" name="apellido" required maxlength="30" placeholder="Apellido">
+            </div>
+            <div>
+                <label for="email"></label>
+                <input type="email" id="email" name="email" placeholder="E-mail">
+            </div>
+            <div>
+                <label for="pass"></label>
+                <input type="password" id="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,24}" title="La contraseña debe de tener un minimo de 8 caracteres y no superar los 24 caracteres, al menos una letra mayuscula y minuscula, y unicamente un numero" placeholder="Contraseña">
+            </div>
+            <div>
+                <label for="rep_pass"></label>
+                <input type="password" id="rep_pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,24}"placeholder="Repetir contraseña">
+            </div>
+            <button type="submit">Guardar</button>
+        </form>
+        <footer>
+                <p>Paysandú-Uruguay</p>
+                <p>Montecasero 875</p>
+        </footer>
+    </body>
+</html>

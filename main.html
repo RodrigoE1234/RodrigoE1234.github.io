@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="image/logo.png">
+        <link rel="stylesheet" href="style/style.css">
+        <title>GamePro</title>
+    </head>
+    <body>
+        <form action="url" method="GET">
+            <header>
+                <div>
+                    <h1><img src="image/logo.gif" width="30"><a href="main.html">GamePro</a><img src="image/logo.gif" width="30"></h1>
+                </div>
+                <div class="us">
+                    <div>
+                        <label for="usua"></label>
+                        <input type="text" id="usua" name="Usuario" placeholder="Usruario" required>
+                    </div>
+                    <div>
+                        <label for="password"></label>
+                        <input type="password" id="pas" name="pas" placeholder="Contraseña" required>
+                    </div>
+                    <div>
+                        <input type="submit" value="Iniciar" class="iniciar">
+                        <div class="registro"><a href="registro.html">Registrarme</a></div>
+                    </div>   
+                </div>
+            </header>
+        </form>
+        <nav>
+            <ul class="navegador">
+                <li><a href="main.html">Inicio</a></li>
+                <li><a href="games.html">Juegos</a>
+                    <ul>
+                        <li>Shooter
+                            <ul class="sub-menu">
+                                <li class="sub-menu"><a href="info_game.html" title="Playerunknown's Battlegrounds">PUBG</a></li>
+                                <li>Battlefield 1</li> 
+                                <li>Call of Duty 4 Modern Warfare</li>  
+                            </ul>
+                        </li>
+                        <li>Carrera
+                            <ul class="sub-menu">
+                                <li>Need for Speed Carbono</li>
+                                <li>Motogp 2018</li>
+                            </ul>
+                        </li>                   
+                        <li class="sub-menu">Aventura
+                            <ul class="sub-menu">  
+                                <li>Batman: The Enemy Within</li>
+                                 <li>God of War: Ascension</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>Noticias</li>
+                <li>¿Quienes somos?</li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav> 
+            <section>
+            <h1>Novedades!</h1>
+                <ul>
+                    <li>
+                        <a href="info_game.html"><img src="image/pubg.png"></a>
+                        <figcaption><a href="info_game.html"><h4>Playerunknown's Battlegrounds</h4></a></figcaption>
+                        <p>Valoración:9/10</p>
+                        <button class="button" type="submit"><a href="comprar.html">Comprar</a></button>
+                    </li>
+                    <li>
+                        <img src="image/call_of_duty.jpg">
+                        <figcaption><h4>Call of Duty 4 Modern Warfare</h4></figcaption>
+                        <p>Valoración:8/10</p>
+                        <button class="button" type="submit"><a href="">Comprar</a></button>
+                    </li>
+                    <li>
+                        <img src="image/god_of_war.jpg">
+                        <figcaption><h4>God of War</h4></figcaption>
+                        <p>Valoración:8/10</p>
+                        <button class="button" type="submit"><a href="">Comprar</a></button>
+                    </li>
+                </ul>   
+            </section>
+        <footer>
+            <p>Paysandú-Uruguay</p>
+            <p>Montecasero 875</p>
+        </footer>
+    </body>
+</html>

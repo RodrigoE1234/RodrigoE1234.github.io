@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="image/logo.png">
+        <title>Compra</title>
+        <link rel="stylesheet" href="style/style.css">
+        <script src="script/compra.js"></script>
+        <script></script>
+    </head>
+    <body>
+        <form action="url" method="GET">
+            <header>
+                <div class="logo">
+                    <h1><img src="image/logo.gif" width="30"><a href="main.html">GamePro</a><img src="image/logo.gif" width="30"></h1>
+                </div>
+                <div class="us">
+                    <div>
+                        <label for="usua"></label>
+                        <input type="text" id="usua" name="Usuario" placeholder="Usruario" required>
+                    </div>
+                    <div>
+                        <label for="password"></label>
+                        <input type="password" id="pas" name="pas" placeholder="Contraseña" required>
+                    </div>
+                    <div>
+                        <input type="submit" value="Iniciar" class="iniciar">
+                        <div class="registro"><a href="registro.html">Registrarme</a></div>
+                    </div>   
+                </div>
+            </header>
+        </form>
+        <nav>
+            <ul class="navegador">
+                <li><a href="main.html">Inicio</a></li>
+                <li><a href="games.html">Juegos</a>
+                    <ul>
+                        <li>Shooter
+                            <ul class="sub-menu">
+                                <li><a href="info_game.html">PUBG</a></li>
+                                <li>Battlefield 1</li> 
+                                <li>Call of Duty</li>  
+                            </ul>
+                        </li>
+                        <li>Carrera
+                            <ul class="sub-menu">
+                                <li>Need for Speed Carbono</li>
+                                <li>Motogp 2018</li>
+                            </ul>
+                        </li>                   
+                        <li>Aventura
+                            <ul class="sub-menu">  
+                                <li>Batman: The Enemy Within</li>
+                                 <li>God of War: Ascension</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>Noticias</li>
+                <li>¿Quienes somos?</li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <form action="url" method="GET" class="form">
+            <h2>Comprar - PUBG</h2>
+            <div class="center">
+                <div>
+                    <label for="cantidad">Cantidad</label>
+                    <input id="cantidad" type="number" value="1">
+                </div>
+                <div>
+                    <input id="contado" type="radio" name="forma-pago">
+                    <label for="contado">Contado</label>
+
+                    <input id="credito" type="radio" name="forma-pago">
+                    <label for="credito">Credito</label>
+                </div>
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" maxlength="30" placeholder="Nombre" pattern="[a-zA-Z]+">
+                </div>
+                <div>
+                    <label for="e-mail">e-mail</label>
+                    <input type="email" required placeholder="e-mail">
+                </div>
+                <div>
+                    <input id="fisico" type="radio" name="formato" checked>
+                    <label for="fisico">Fisico (DVD/CD)</label>
+
+                    <input id="digital" type="radio" name="formato">
+                    <label for="digital">Digital</label>
+                </div>
+                <div id="formato">
+                    <div>
+                    <label>Direccion de entrega</label>
+                    <input id="froma" type="text">
+                    </div>
+                    <div required>
+                        <input type="radio" name="metodo" id="comun">
+                        <label for="comun">Común</label>
+
+                        <input type="radio" name="metodo" id="especial">
+                        <label for="especial">Especial</label>
+
+                        <input type="radio" name="metodo" id="premium">
+                        <label for="premium">Premium</label>
+                    </div>
+                </div>
+            </div>
+            <div>                
+                <button type="reset" class="cancelar">Cancelar compras</button>
+                <button type="submit"><a href="">Actualizar</a></button>
+                <button type="submit">Comprar</button>
+            </div>
+            <div>
+                <h4>Costo de envio: $<strong id="total-envio"></strong></h4>
+                <h4>Subtotal (sin imp.): $<strong id="subtotal"></strong></h4>
+                <h4>Total (imp. incluidos): $<strong id="total"></strong></h4>
+            </div>
+        </form>
+        <footer>
+            <div>
+                <p>Paysandú-Uruguay</p>
+                <p>Montecasero 875</p>
+            </div>
+        </footer>
+    </body>
+</html>

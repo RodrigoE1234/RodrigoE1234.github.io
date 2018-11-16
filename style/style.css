@@ -1,0 +1,203 @@
+@font-face {
+    font-family: "Mali-Medium";
+    src: url("../font/Mali-Medium.ttf");
+}
+@font-face {
+    font-family: "FredokaOne-Regular";
+    src: url("../font/FredokaOne-Regular.ttf");
+}
+body{
+    background-image: url(../image/farcry.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+}
+/* Font */
+*{
+    font-family: "Mali-Medium";
+    text-align: center; 
+}
+a,h1,h3,li,button{
+    font-family: "FredokaOne-Regular";
+}
+
+/* Encabezado */
+header{
+    background-color:rgba(126, 126, 126, 0.7);
+    border-radius: 10px 10px 10px 10px; 
+    color: black;
+    height: 100px;
+}
+div h1{
+    float: left;
+    margin: 25px 0px 10px 5px;
+}
+div h1 a{
+    text-decoration: none;
+    color: black;
+}
+.us{
+    float: right; 
+    margin: 10px 10px 0px 0px;
+}
+.registro a{
+    text-decoration: none;
+    color: black;
+}
+/* Navegador */
+ul, ol{
+    list-style: none;
+}
+.navegador{
+    display: inline-block; 
+}
+.navegador li {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 140px;   
+}
+.navegador li a{
+    text-decoration: none;
+    color: white;
+}
+.navegador li a:hover {
+    background-color: rgba(126, 126, 126, 0.8);
+    position: relative;
+}
+.navegador > li{
+    display: inline-block;
+    vertical-align: top;
+}
+.navegador li ul{
+    display: none;
+    position: relative;
+    min-width: 140px;
+    padding: 0;
+}
+.navegador li:hover{
+    background-color: rgba(126, 126, 126, 0.8);
+    height: 20px;
+}
+.navegador li:hover > ul {
+    display: block;
+}
+.navegador li ul li {
+    position: relative;
+    top: 8px;
+    left: -9px;
+}
+.navegador li ul li ul li{
+    position: relative;
+    left: 0px;
+    top: -29px;
+}
+.navegador li ul{
+    position: relative;
+    padding: 0;
+}
+.sub-menu{
+    left: 150px;
+}
+/* Lista de Juegos */
+section h3{
+    background-color: rgba(126, 126, 126, 0.8);
+    border-radius: 10px;
+    width: 140px;
+    margin: auto;
+}
+section ul{
+    background-color: rgba(126, 126, 126, 0.7);
+    border-radius: 10px;
+    margin: 10px 10px 10px 10px;
+}
+section ul li{
+    display: inline-block;
+    width: 20%;
+    padding: 10px;
+}
+section ul li figcaption a{
+    text-decoration: none;
+    color: black;
+}
+section ul li img{
+    width: 200px;
+    height: 300px;
+}
+
+/* Contacto y Info Game  */
+main{
+    background-color: rgba(126, 126, 126, 0.7);
+    border-radius: 10px;
+    margin: 10px 10px 10px 10px;
+    text-align: center;
+}
+#image1{
+    width: 74%;
+}
+figure div img{
+    width: 12%;
+}
+table{
+    margin: auto;
+    border: 2px solid black;
+}
+/* Comprar */
+button{
+    font-size: 20px;
+    background-color: rgba(126, 126, 126, 0.8);
+    border: 2px solid black;    
+    border-radius: 10px;
+    margin: 10px;
+}
+button a{
+    text-decoration: none;
+    color: black;
+}
+.cancelar{
+    color: red;
+}
+/* Registro */
+.form{
+    background-color: rgba(126, 126, 126, 0.7)
+}
+/* Pie de Pagina */
+footer{
+    background-color: rgba(126, 126, 126, 0.7);
+    border-radius: 10px;
+    margin: 30px 80px 80px 80px ;
+}
+/* Layout */
+@media screen and (min-width: 500px) and (max-width: 800px)
+{
+    header{
+        display: block;
+    }
+    section ul li{
+        width: 33%;
+    }
+    .navegador li:hover > ul{
+    display: none;
+    }
+}
+@media screen and (max-width: 499px)
+{
+    section ul li{
+        width: 80%;
+        padding: 0px 30px 0px 0px;
+
+    }
+    section ul{
+        display: block;
+        padding: 10px;
+    }
+    .navegador li:hover > ul{
+        display: none;
+    }
+    section ul li img{
+        margin: 20px;
+    }
+}
