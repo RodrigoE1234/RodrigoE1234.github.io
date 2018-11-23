@@ -19,16 +19,19 @@ body{
     font-family: "Mali-Medium";
     text-align: center; 
 }
+p,label{
+    font-size: 17px;
+}
 a,h1,h3,li,button{
     font-family: "FredokaOne-Regular";
 }
 
 /* Encabezado */
 header{
-    background-color:rgba(126, 126, 126, 0.7);
-    border-radius: 10px 10px 10px 10px; 
+    background-color:rgba(126, 126, 126, 0.93);
+    border-radius: 20px;
     color: black;
-    height: 100px;
+    height: 110px;
 }
 div h1{
     float: left;
@@ -54,10 +57,10 @@ ul, ol{
     display: inline-block; 
 }
 .navegador li {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.93);
     color: white;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 20px;
     width: 140px;   
 }
 .navegador li a{
@@ -65,7 +68,7 @@ ul, ol{
     color: white;
 }
 .navegador li a:hover {
-    background-color: rgba(126, 126, 126, 0.8);
+    background-color: rgba(126, 126, 126, 0.93);
     position: relative;
 }
 .navegador > li{
@@ -79,7 +82,7 @@ ul, ol{
     padding: 0;
 }
 .navegador li:hover{
-    background-color: rgba(126, 126, 126, 0.8);
+    background-color: rgba(126, 126, 126, 0.93);
     height: 20px;
 }
 .navegador li:hover > ul {
@@ -104,15 +107,15 @@ ul, ol{
 }
 /* Lista de Juegos */
 section h3{
-    background-color: rgba(126, 126, 126, 0.8);
-    border-radius: 10px;
+    background-color: rgba(126, 126, 126, 0.93);
+    border-radius: 20px;
     width: 140px;
     margin: auto;
 }
 section ul{
-    background-color: rgba(126, 126, 126, 0.7);
-    border-radius: 10px;
-    margin: 10px 10px 10px 10px;
+    background-color: rgba(126, 126, 126, 0.93);
+    border-radius: 20px;
+    margin: 10px;
 }
 section ul li{
     display: inline-block;
@@ -127,13 +130,15 @@ section ul li img{
     width: 200px;
     height: 300px;
 }
-
 /* Contacto y Info Game  */
 main{
-    background-color: rgba(126, 126, 126, 0.7);
-    border-radius: 10px;
-    margin: 10px 10px 10px 10px;
+    background-color: rgba(126, 126, 126, 0.93);
+    border-radius: 20px;
+    margin: 20px;
     text-align: center;
+}
+#img-portada{
+    margin: 20px
 }
 #image1{
     width: 74%;
@@ -146,11 +151,17 @@ table{
     border: 2px solid black;
 }
 /* Comprar */
+.border{
+    border: 2px solid black;
+    width: 300px;
+    margin: 10px auto 10px auto;
+    padding: 5px;
+}
 button{
     font-size: 20px;
-    background-color: rgba(126, 126, 126, 0.8);
+    background-color: rgba(126, 126, 126, 0.93);
     border: 2px solid black;    
-    border-radius: 10px;
+    border-radius: 20px;
     margin: 10px;
 }
 button a{
@@ -162,12 +173,14 @@ button a{
 }
 /* Registro */
 .form{
-    background-color: rgba(126, 126, 126, 0.7)
+    background-color: rgba(126, 126, 126, 0.93);
+    border-radius: 20px;
+    margin: 20px;
 }
 /* Pie de Pagina */
 footer{
-    background-color: rgba(126, 126, 126, 0.7);
-    border-radius: 10px;
+    background-color: rgba(126, 126, 126, 0.93);
+    border-radius: 20px;
     margin: 30px 80px 80px 80px ;
 }
 /* Layout */
@@ -188,7 +201,6 @@ footer{
     section ul li{
         width: 80%;
         padding: 0px 30px 0px 0px;
-
     }
     section ul{
         display: block;

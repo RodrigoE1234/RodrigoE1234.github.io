@@ -63,12 +63,15 @@
         </nav>
         <form action="url" method="GET" class="form">
             <h2>Comprar - PUBG</h2>
+            <h4>Precio del Juego U$619</h4>
             <div class="center">
                 <div>
-                    <label for="cantidad">Cantidad</label>
-                    <input id="cantidad" type="number" value="1">
+                    <p>Cantidad</p>
+                    <label for="cantidad"></label>
+                    <input id="cantidad" type="number">
                 </div>
-                <div>
+                <div class="border">
+                    <p>Forma de pago</p>
                     <input id="contado" type="radio" name="forma-pago">
                     <label for="contado">Contado</label>
 
@@ -76,14 +79,15 @@
                     <label for="credito">Credito</label>
                 </div>
                 <div>
-                    <label for="nombre">Nombre</label>
+                    <label for="nombre"></label>
                     <input type="text" maxlength="30" placeholder="Nombre" pattern="[a-zA-Z]+">
                 </div>
                 <div>
-                    <label for="e-mail">e-mail</label>
+                    <label for="e-mail"></label>
                     <input type="email" required placeholder="e-mail">
                 </div>
-                <div>
+                <div class="border">
+                    <p>Formato</p>
                     <input id="fisico" type="radio" name="formato" checked>
                     <label for="fisico">Fisico (DVD/CD)</label>
 
@@ -92,10 +96,12 @@
                 </div>
                 <div id="formato">
                     <div>
-                    <label>Direccion de entrega</label>
-                    <input id="froma" type="text">
+                        <p>Direccion de entrega:</p>
+                        
+                        <input id="froma" type="text">
                     </div>
-                    <div required>
+                    <div class="border" required>
+                        <p>Metodo de envío</p>
                         <input type="radio" name="metodo" id="comun">
                         <label for="comun">Común</label>
 
