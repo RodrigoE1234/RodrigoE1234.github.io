@@ -80,7 +80,7 @@
                 </div>
                 <div>
                     <label for="nombre"></label>
-                    <input type="text" maxlength="30" placeholder="Nombre" pattern="[a-zA-Z]+">
+                    <input type="text" maxlength="30" placeholder="Nombre" pattern="[a-zA-Z]+" required>
                 </div>
                 <div>
                     <label for="e-mail"></label>
@@ -97,7 +97,6 @@
                 <div id="formato">
                     <div>
                         <p>Direccion de entrega:</p>
-                        
                         <input id="froma" type="text">
                     </div>
                     <div class="border" required>
@@ -119,7 +118,7 @@
                 <button type="submit">Comprar</button>
             </div>
             <div>
-                <h4>Costo de envio: $<strong id="total-envio"></strong></h4>
+                <h4 id=costoe>Costo de envio: $<strong id="total-envio"></strong></h4>
                 <h4>Subtotal (sin imp.): $<strong id="subtotal"></strong></h4>
                 <h4>Total (imp. incluidos): $<strong id="total"></strong></h4>
             </div>
